@@ -21,7 +21,7 @@ Everything user-facing comes from `site.config.json`:
 | `siteUrl` | Canonical URL. `https://centa.jhere.site`; the build writes a CNAME file for Pages. | set |
 | `developer` | Legal name shown in the policy, terms and footer. | set |
 | `contactEmail` | Support address. Must be monitored; Apple and Google email it. | set |
-| `postalAddress` | Physical address. Google Play requires a full street address for paid apps and shows it on the listing. | city only |
+| `postalAddress` | Physical address. Google Play requires a full street address for paid apps and shows it on the listing. | set |
 | `appStoreUrl`, `playStoreUrl` | Store links. Buttons render disabled until set. | empty |
 | `formEndpoint` | A Formspree/Basin/etc. endpoint for the support form. Empty falls back to mailto. | empty |
 | `analytics.domain` | Plausible site domain. Empty disables analytics and the notice entirely. | empty |
