@@ -12,8 +12,8 @@
     <path d="M 388 178 A 150 150 0 1 0 388 334" fill="none" stroke="#0E0E0E" stroke-width="58" stroke-linecap="round"/>
     <circle cx="404" cy="256" r="24" fill="#0E0E0E"/>
   </g>
-  <text x="80" y="330" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="84" fill="#FFFFFF">know what you can spend.</text>
-  <text x="80" y="420" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="84" fill="#8A8A86">before you spend it.</text>
+  <text x="80" y="320" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="66" fill="#FFFFFF">know what you can spend.</text>
+  <text x="80" y="400" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="66" fill="#8A8A86">before you spend it.</text>
   <!-- day strip -->
   <g fill="#FFFFFF">
     <circle cx="92" cy="520" r="9"/><circle cx="128" cy="520" r="9"/><circle cx="164" cy="520" r="14"/>
