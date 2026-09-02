@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="{{canonical}}">
+  <meta name="theme-color" content="#F2F2F0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0B0B0B" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{siteName}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="{{siteUrl}}/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Centa: know what you can spend, before you spend it.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:description" content="{{description}}">
+  <meta name="twitter:image" content="{{siteUrl}}/og.png">
+  <link rel="icon" href="{{base}}/favicon.ico" sizes="32x32">
+  <link rel="icon" href="{{base}}/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{base}}/apple-touch-icon.png">
+  <link rel="manifest" href="{{base}}/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;800&display=swap">
+  <link rel="stylesheet" href="{{base}}/assets/styles.css">
+  <script>window.CENTA = {{configJson}};</script>
+  {{jsonLd}}
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="{{base}}/" aria-label="Centa home">
+        <svg viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="116" fill="currentColor"/><path d="M 388 178 A 150 150 0 1 0 388 334" fill="none" stroke="var(--ground)" stroke-width="58" stroke-linecap="round"/><circle cx="404" cy="256" r="24" fill="var(--ground)"/></svg>
+        centa
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="{{base}}/#features" {{cur:features}}>Features</a>
+        <a href="{{base}}/#privacy-pledge">Privacy</a>
+        <a href="{{base}}/support/" {{cur:support}}>Support</a>
+        <a class="btn btn-primary" style="padding:10px 16px" href="{{base}}/#download">Get the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+{{content}}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <a class="wordmark" href="{{base}}/" style="font-size:18px">centa</a>
+        <p style="margin-top:8px;max-width:38ch">Budget widgets for people paid on the 15th and the 30th. Offline. No account. Yours.</p>
+        <address>{{developer}}<br>{{postalAddress}}<br><a href="mailto:{{contactEmail}}">{{contactEmail}}</a></address>
+      </div>
+      <nav aria-label="Product">
+        <span class="eyebrow">Product</span>
+        <a href="{{base}}/#features">Features</a>
+        <a href="{{base}}/#how">How it works</a>
+        <a href="{{base}}/#faq">FAQ</a>
+        <a href="{{base}}/support/">Support</a>
+      </nav>
+      <nav aria-label="Legal">
+        <span class="eyebrow">Legal</span>
+        <a href="{{base}}/privacy/">Privacy policy</a>
+        <a href="{{base}}/terms/">Terms of use</a>
+        <a href="{{base}}/support/#delete">Delete your data</a>
+        <span style="margin-top:8px">© {{year}} {{developer}}</span>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="notice" role="region" aria-label="Analytics notice">
+    <p>This site uses cookieless, privacy-friendly analytics to count visits. No personal data, no cookies, no tracking across sites.</p>
+    <button class="btn btn-secondary" style="padding:8px 14px;font-size:13px">OK</button>
+  </div>
+  {{stickyCta}}
+  <script src="{{base}}/assets/main.js" defer></script>
+</body>
+</html>

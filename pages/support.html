@@ -1,0 +1,44 @@
+<!-- {
+  "title": "Support — Centa",
+  "description": "Get help with Centa: widgets, backups, Pro purchases and deleting your data. Email us or send a message."
+} -->
+<article class="doc">
+  <div class="wrap">
+    <p class="eyebrow">support</p>
+    <h1 style="margin-top:10px">How can we help?</h1>
+    <p class="meta">We are a very small team in the Philippines. Expect a reply within two working days.</p>
+
+    <h2>Common fixes</h2>
+    <h3>The widget is not updating</h3>
+    <p>Open Centa once; it refreshes every widget on launch. On some Android phones (Xiaomi, Vivo, Oppo, Realme) battery optimisation stops background work: in your phone's settings, set Centa to "No restrictions" or "Allow background activity". On iPhone, widgets refresh on a schedule the system controls; opening the app forces it.</p>
+    <h3>A widget tap did not appear in Activity</h3>
+    <p>Taps are queued and processed within seconds in the background, or the moment you open the app. If the app was force-closed, open it once and the queue is processed.</p>
+    <h3>Restoring Centa Pro on a new phone</h3>
+    <p>Settings → Centa Pro → Restore purchases, signed in to the same Apple ID or Google account you bought it with.</p>
+    <h3>I forgot my backup passphrase</h3>
+    <p>The backup cannot be opened without it, by anyone. Start fresh and export a new backup with a passphrase you will remember.</p>
+
+    <h2 id="delete">Deleting your data</h2>
+    <p>Centa has no accounts, so there is nothing to delete on our side. To remove everything: uninstall the app, or open your phone's app settings for Centa and clear its storage. Both remove the local database, widget data and settings. Delete any backup or CSV files you exported yourself. If you emailed us and want that correspondence deleted, ask at <a href="mailto:{{contactEmail}}">{{contactEmail}}</a>.</p>
+
+    <h2 id="contact">Send us a message</h2>
+    <form class="form" data-form data-thanks="{{base}}/thanks/" method="post" action="{{formEndpoint}}" novalidate>
+      <div class="field">
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" aria-describedby="email-error" required>
+        <span class="error" id="email-error">Enter a valid email so we can reply.</span>
+      </div>
+      <div class="field">
+        <label for="message">What is going on?</label>
+        <textarea id="message" name="message" placeholder="What did you expect, and what happened instead?" aria-describedby="message-error" required></textarea>
+        <span class="error" id="message-error">Tell us a little more (at least 10 characters).</span>
+      </div>
+      <div class="field" style="position:absolute;left:-9999px" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+      <div>
+        <button class="btn btn-primary" type="submit"><span class="spinner" aria-hidden="true"></span><span class="label">Send message</span></button>
+      </div>
+      <p class="status" role="status" aria-live="polite"></p>
+      <p class="muted" style="font-size:13px">Or email <a href="mailto:{{contactEmail}}">{{contactEmail}}</a> directly.</p>
+    </form>
+  </div>
+</article>

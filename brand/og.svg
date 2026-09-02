@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0B0B"/>
+      <stop offset="1" stop-color="#2A2A2A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ink)"/>
+  <!-- mark -->
+  <g transform="translate(80 80) scale(0.22)">
+    <rect width="512" height="512" rx="116" fill="#FFFFFF"/>
+    <path d="M 388 178 A 150 150 0 1 0 388 334" fill="none" stroke="#0E0E0E" stroke-width="58" stroke-linecap="round"/>
+    <circle cx="404" cy="256" r="24" fill="#0E0E0E"/>
+  </g>
+  <text x="80" y="330" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="84" fill="#FFFFFF">know what you can spend.</text>
+  <text x="80" y="420" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="84" fill="#8A8A86">before you spend it.</text>
+  <!-- day strip -->
+  <g fill="#FFFFFF">
+    <circle cx="92" cy="520" r="9"/><circle cx="128" cy="520" r="9"/><circle cx="164" cy="520" r="14"/>
+  </g>
+  <g fill="#4A4A4A">
+    <circle cx="200" cy="520" r="9"/><circle cx="236" cy="520" r="9"/><circle cx="272" cy="520" r="9"/><circle cx="308" cy="520" r="9"/><circle cx="344" cy="520" r="9"/><circle cx="380" cy="520" r="9"/><circle cx="416" cy="520" r="9"/><circle cx="452" cy="520" r="9"/><circle cx="488" cy="520" r="9"/><circle cx="524" cy="520" r="9"/><circle cx="560" cy="520" r="9"/><circle cx="596" cy="520" r="9"/>
+  </g>
+  <text x="80" y="580" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#9A9A94">centa · budget widgets for the 15th and the 30th · offline · no account</text>
+</svg>

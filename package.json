@@ -1,0 +1,14 @@
+{
+  "name": "centa-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Centa marketing site, privacy policy, terms and support pages.",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node build.mjs && npx serve dist"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4"
+  }
+}
