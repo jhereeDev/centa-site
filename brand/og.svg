@@ -7,11 +7,7 @@
   </defs>
   <rect width="1200" height="630" fill="url(#ink)"/>
   <!-- mark -->
-  <g transform="translate(80 80) scale(0.22)">
-    <rect width="512" height="512" rx="116" fill="#FFFFFF"/>
-    <path d="M 388 178 A 150 150 0 1 0 388 334" fill="none" stroke="#0E0E0E" stroke-width="58" stroke-linecap="round"/>
-    <circle cx="404" cy="256" r="24" fill="#0E0E0E"/>
-  </g>
+  <g transform="translate(70 60) scale(0.3)"><path d="M 250 104 C 352 96 452 158 446 254 C 440 350 352 410 254 406 C 156 402 64 348 68 254 C 72 160 148 112 250 104 Z" fill="#FFFFFF"/><rect x="212" y="216" width="20" height="50" rx="10" fill="#0E0E0E"/><rect x="280" y="216" width="20" height="50" rx="10" fill="#0E0E0E"/></g>
   <text x="80" y="320" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="66" fill="#FFFFFF">know what you can spend.</text>
   <text x="80" y="400" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="66" fill="#8A8A86">before you spend it.</text>
   <!-- day strip -->

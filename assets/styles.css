@@ -35,7 +35,7 @@ p { margin: 0; }
 .site-header { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--ground) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
 .wordmark { font-family: var(--display); font-size: 22px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
-.wordmark svg { width: 26px; height: 26px; }
+.wordmark svg { width: 30px; height: 30px; }
 .nav { display: flex; gap: 20px; font-size: 14px; font-weight: 500; }
 .nav a { text-decoration: none; color: var(--text-muted); }
 .nav a[aria-current="page"], .nav a:hover { color: var(--text); }
