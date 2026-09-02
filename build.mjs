@@ -70,6 +70,10 @@ for (const file of pageFiles) {
 // Static assets
 await cp(path.join(root, 'assets'), path.join(dist, 'assets'), { recursive: true });
 
+// Custom domain for GitHub Pages
+const host = new URL(siteUrl).host;
+if (!host.endsWith('github.io')) await writeFile(path.join(dist, 'CNAME'), host + '\n');
+
 // robots + sitemap
 await writeFile(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n`);
 await writeFile(

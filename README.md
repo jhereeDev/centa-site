@@ -18,13 +18,17 @@ Everything user-facing comes from `site.config.json`:
 
 | Key | What | Status |
 |---|---|---|
-| `siteUrl` | Canonical URL. Set to your custom domain once DNS points at Pages, otherwise the `github.io` URL. | github.io |
-| `developer` | Legal name shown in the policy, terms and footer. | placeholder |
-| `contactEmail` | Support address. Must be monitored; Apple and Google email it. | placeholder |
-| `postalAddress` | Physical address. Google Play requires one for paid apps and shows it on the listing. | city only |
+| `siteUrl` | Canonical URL. `https://centa.jhere.site`; the build writes a CNAME file for Pages. | set |
+| `developer` | Legal name shown in the policy, terms and footer. | set |
+| `contactEmail` | Support address. Must be monitored; Apple and Google email it. | set |
+| `postalAddress` | Physical address. Google Play requires a full street address for paid apps and shows it on the listing. | city only |
 | `appStoreUrl`, `playStoreUrl` | Store links. Buttons render disabled until set. | empty |
 | `formEndpoint` | A Formspree/Basin/etc. endpoint for the support form. Empty falls back to mailto. | empty |
 | `analytics.domain` | Plausible site domain. Empty disables analytics and the notice entirely. | empty |
+
+## DNS for centa.jhere.site
+
+At your DNS provider for jhere.site add a CNAME record: host `centa`, value `jhereedev.github.io`. Pages issues the HTTPS certificate automatically once the record resolves (usually within an hour); then tick "Enforce HTTPS" in the repo Settings → Pages.
 
 ## Store forms
 

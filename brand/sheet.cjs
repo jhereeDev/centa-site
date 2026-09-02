@@ -7,7 +7,8 @@ const out = path.resolve(here, '../../bta/.shots/brand-sheet.html');
 const svg = (n) => fs.readFileSync(path.join(here, n), 'utf8');
 const png = (p) => `data:image/png;base64,${fs.readFileSync(p).toString('base64')}`;
 const BLOB = 'M 250 104 C 352 96 452 158 446 254 C 440 350 352 410 254 406 C 156 402 64 348 68 254 C 72 160 148 112 250 104 Z';
-const coin = (fill, eye) => `<svg viewBox="0 0 512 512"><path d="${BLOB}" fill="${fill}"/><rect x="212" y="216" width="20" height="50" rx="10" fill="${eye}"/><rect x="280" y="216" width="20" height="50" rx="10" fill="${eye}"/></svg>`;
+let mid = 0;
+const coin = (fill, eye) => { const id = 'm' + (mid++); return `<svg viewBox="0 0 512 512"><defs><mask id="${id}"><rect width="512" height="512" fill="#fff"/><circle cx="452" cy="178" r="66" fill="#000"/></mask></defs><path d="${BLOB}" fill="${fill}" mask="url(#${id})"/><rect x="196" y="214" width="20" height="50" rx="10" fill="${eye}"/><rect x="262" y="214" width="20" height="50" rx="10" fill="${eye}"/></svg>`; };
 
 const html = `<title>Centa Brand Mark</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;800&display=swap">
@@ -40,8 +41,8 @@ const html = `<title>Centa Brand Mark</title>
 </style>
 <main>
   <div class="eyebrow">centa · brand mark · ${new Date().toISOString().slice(0, 10)}</div>
-  <h1>a coin with a face.</h1>
-  <p class="lede">A soft, slightly wonky oval, wider than tall, with two dash eyes. One shape, one colour, no gradients, no outlines. It is a peso coin that looks back at you, in the same family as flat companion blobs. Everything below is generated from a single SVG path.</p>
+  <h1>a coin with a bite.</h1>
+  <p class="lede">A soft, wonky coin with a bite out of its top-right edge, so it is also a lowercase c, and two dash eyes. One shape, one colour, no gradients, no outlines. In the app the coin is alive: it blinks, glances toward your number, and its eyes narrow as money weather turns tight. Everything below is generated from a single SVG path.</p>
 
   <h2>the mark</h2>
   <div class="row">
@@ -73,7 +74,7 @@ const html = `<title>Centa Brand Mark</title>
   <div class="rules">
     <div><b>Two colours, ever.</b><span>Ink #0E0E0E and white. On the off-white ground the eyes take the ground colour so the coin looks punched, not printed.</span></div>
     <div><b>Never outline, never gradient the coin.</b><span>The ink gradient belongs to cards, not to the mark. The coin stays flat so it survives at 29 px.</span></div>
-    <div><b>The eyes are the brand.</b><span>Two vertical dashes, 20×50 in a 512 box, 68 apart. Do not add a mouth, brows, or a blink.</span></div>
+    <div><b>The bite is the difference.</b><span>A circle cut from the top-right edge. It turns the blob into a c and a coin at once; keep it at 2 o'clock, never at mouth height.</span></div><div><b>The eyes are alive, not expressive.</b><span>Two vertical dashes, 20×50 in a 512 box, 66 apart. They blink, glance and narrow (sunny → caution → tight). No mouth, no brows, no pupils.</span></div>
     <div><b>Clear space.</b><span>Half the coin's height on every side. In the lockup the mark sits at 1.2× cap height of "centa".</span></div>
     <div><b>Widgets keep the day strip.</b><span>The coin is for identity surfaces: icon, splash, site, store listing. Widgets stay typographic.</span></div>
     <div><b>Source of truth.</b><span>centa-site/brand/generate.mjs. Run it to regenerate every icon and SVG after any change to the path.</span></div>

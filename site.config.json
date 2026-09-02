@@ -1,13 +1,16 @@
 {
   "name": "Centa",
   "tagline": "Know what you can spend. Before you spend it.",
-  "siteUrl": "https://jhereedev.github.io/centa-site",
-  "developer": "Centa by Jheremiah",
-  "contactEmail": "support@centa.app",
-  "postalAddress": "Metro Manila, Philippines",
+  "siteUrl": "https://centa.jhere.site",
+  "developer": "Jheremiah Figueroa",
+  "contactEmail": "figueroa.jheremiah@gmail.com",
+  "postalAddress": "Caloocan City, Metro Manila, Philippines",
   "effectiveDate": "2026-09-03",
   "appStoreUrl": "",
   "playStoreUrl": "",
   "formEndpoint": "",
-  "analytics": { "provider": "plausible", "domain": "" }
+  "analytics": {
+    "provider": "plausible",
+    "domain": ""
+  }
 }
